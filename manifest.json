@@ -1,0 +1,13 @@
+{  
+  "name": "Push Demo",  
+  "short_name": "Push Demo",  
+  "icons": [{  
+        "src": "images/junglee.png",  
+        "sizes": "104x122",
+        "type": "image/png" 
+      }],  
+  "start_url": "/chrome-push-test/index.html?homescreen=1",  
+  "display": "standalone",  
+  "gcm_sender_id": "69763843584",  
+  "gcm_user_visible_only": true  
+}
