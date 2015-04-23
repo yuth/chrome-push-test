@@ -65,7 +65,7 @@
                     }
 
                     // Keep your server in sync with the latest subscriptionId
-                    sendSubscriptionToServer(subscription);
+                    document.querySelector('#push-key').innerText = subscription.subscriptionId;
 
                     // Set your UI to show they have subscribed for  
                     // push messages  
@@ -92,7 +92,8 @@
 
                     // TODO: Send the subscription.subscriptionId and   
                     // subscription.endpoint to your server  
-                    // and save it to send a push message at a later date   
+                    // and save it to send a push message at a later date 
+                    document.querySelector('#push-key').innerText = subscription.subscriptionId;
                     return ;//sendSubscriptionToServer(subscription);
                 })
                 .catch(function(e) {
